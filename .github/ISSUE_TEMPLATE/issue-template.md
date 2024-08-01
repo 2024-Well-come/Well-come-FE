@@ -1,6 +1,6 @@
 ---
 name: Issue Template
-about: Describe this issue template's purpose here.
+about: 이슈 템플릿을 사용하여 이슈를 작성해주세요.
 title: ''
 labels: ''
 assignees: ''
