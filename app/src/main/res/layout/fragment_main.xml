@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Well Come, 00님"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/noticeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bell"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gear"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="일상에 지친 오늘, \n웰니스 여행을 떠나볼까요?"
+        android:textSize="24sp"
+        android:fontFamily="@font/pretnedard_regular"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/article_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:layout_marginVertical="32dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="@color/main_color"
+        android:drawableLeft="@drawable/leaf"
+        android:text="여행지 추천받기"
+        android:textSize="18sp"
+        android:fontFamily="@font/pretendard_bold"/>
+
+</LinearLayout>
