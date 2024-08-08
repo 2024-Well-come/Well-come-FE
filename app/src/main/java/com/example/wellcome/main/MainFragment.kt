@@ -1,4 +1,4 @@
-package com.example.wellcome
+package com.example.wellcome.main
 
 import android.os.Bundle
 import android.text.SpannableStringBuilder
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.wellcome.R
 import com.example.wellcome.databinding.FragmentMainBinding
 
 class MainFragment: Fragment() {

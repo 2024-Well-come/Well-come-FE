@@ -1,4 +1,4 @@
-package com.example.wellcome
+package com.example.wellcome.main
 
 import android.graphics.drawable.Drawable
 import android.media.Image

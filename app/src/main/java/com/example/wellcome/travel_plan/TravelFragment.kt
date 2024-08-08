@@ -1,21 +1,21 @@
-package com.example.wellcome
+package com.example.wellcome.travel_plan
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.wellcome.databinding.FragmentCommunityBinding
+import com.example.wellcome.databinding.FragmentTravelBinding
 
-class CommunityFragment : Fragment() {
-    lateinit var binding: FragmentCommunityBinding
+class TravelFragment : Fragment() {
+
+    lateinit var binding: FragmentTravelBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentCommunityBinding.inflate(inflater, container, false)
+        binding = FragmentTravelBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 }

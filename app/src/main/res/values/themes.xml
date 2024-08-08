@@ -13,7 +13,7 @@
     </style>
 
     <style name="CustomButton" parent="Widget.MaterialComponents.Button">
-        <item name="background">@drawable/button_style</item>
-        <item name="android:background">@drawable/button_style</item>
+        <item name="background">@drawable/style_button</item>
+        <item name="android:background">@drawable/style_button</item>
     </style>
 </resources>

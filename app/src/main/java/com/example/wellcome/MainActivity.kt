@@ -1,19 +1,11 @@
 package com.example.wellcome
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.fragment.app.FragmentManager
+import com.example.wellcome.community.CommunityFragment
 import com.example.wellcome.databinding.ActivityMainBinding
+import com.example.wellcome.main.MainFragment
+import com.example.wellcome.travel_plan.TravelFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.tab1 -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.container,MainFragment()).commit()
+                    supportFragmentManager.beginTransaction().replace(R.id.container,
+                        MainFragment()
+                    ).commit()
                     true
                 }
                 R.id.tab2 -> {
